@@ -48,7 +48,7 @@ Follow these steps to get started with the GraphQL project:
 {
   "query": "mutation updatePerson($id: String!, $name: String, $surname: String) { updatePerson(id: $id, name: $name, surname: $surname) { person { id name surname dates { lastlogin register } } } }",
   "variables": {
-    "id": "64e6fef59c4d3f5204f14c93",
+    "id": "user id",
     "name": "user name",
     "surname": "user surname"
   }
@@ -57,7 +57,7 @@ Follow these steps to get started with the GraphQL project:
 5. Delete user
 
 {
-  "query": "query getPerson($id: String!) { getPerson(id: $id) { id name surname dates { lastlogin register } } }",
+  "query": "mutation DeletePerson($id: String!) { deletePerson(id: $id) { success } }",
   "variables": {
     "id": "user id"
   }
